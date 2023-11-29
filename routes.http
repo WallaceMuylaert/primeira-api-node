@@ -1,0 +1,31 @@
+# Criar um novo vídeo
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video 02",
+    "description": "Esse é o video 02",
+    "duration": 180
+}
+
+###
+
+# Listar todos os vídeos
+GET http://localhost:3333/videos?search=Node
+
+###
+
+# Atualizar um vídeo pelo ID
+PUT http://localhost:3333/videos/08f2dcf9-66a4-43e7-a832-d47c425d8607
+Content-Type: application/json
+
+{
+    "title": "Video 01 atualizado",
+    "description": "Esse é o video 01 atualizado",
+    "duration": 1800
+}
+
+###
+
+# Deletar um vídeo pelo ID
+DELETE http://localhost:3333/videos/05951456-120a-4522-b2a3-4eeedde8c16e

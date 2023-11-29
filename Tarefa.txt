@@ -1,0 +1,33 @@
+1. Configuração do Projeto:
+   - Crie um novo projeto Node.js.
+   - Configure o projeto para usar o Express como framework.
+   * npm install express --save
+
+
+2. Rotas Básicas:
+   - Crie rotas para as operações CRUD (Create, Read, Update, Delete) em um recurso fictício (por exemplo, usuários, posts, etc.).
+   - Certifique-se de que as rotas estejam respondendo corretamente aos métodos HTTP apropriados (GET, POST, PUT, DELETE).
+
+3. Validação de Entrada:
+   - Implemente validação de entrada para garantir que os dados fornecidos nas solicitações estejam corretos.
+   $ npm i express-validator
+   - Considere validar parâmetros de consulta, corpo da solicitação e parâmetros de rota.
+
+4. Persistência de Dados:
+   - Utilize um banco de dados (por exemplo, MongoDB, MySQL) para persistir os dados.
+   - Implemente lógica para interagir com o banco de dados ao executar operações CRUD.
+
+5. Testes Unitários:
+   - Escreva testes unitários para pelo menos uma rota e uma função de manipulação de dados.
+   - Use uma biblioteca de teste como Mocha, Jest ou similar.
+
+6. Middleware:
+   - Implemente um middleware que registre as solicitações recebidas, exibindo informações como método, URL e hora.
+   - Adicione um middleware de tratamento de erros global para lidar com erros em toda a aplicação.
+
+7. Autenticação e Autorização (opcional):
+   - Adicione autenticação e autorização para proteger certas rotas.
+   - Pode ser implementado com tokens JWT, por exemplo.
+
+8. Documentação da API:
+   - Documente sua API usando ferramentas como Swagger ou Postman.
